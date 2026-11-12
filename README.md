@@ -33,6 +33,12 @@ A simulated mobile robot that navigates unknown environments with no prior map, 
 
 **Focus:** ROS2, Gazebo, LIDAR processing, subsumption architecture, control, Python.
 
+### 🃏 [Blackjack Monte Carlo](https://github.com/Mehta102/blackjack-monte-carlo)
+
+A reinforcement learning agent that learns Blackjack from scratch using two Monte Carlo control methods, exploring starts and on-policy epsilon-soft, on a custom Sutton and Barto style environment. Both reach about 43% wins over 100,000 games, the known optimum for this variant.
+
+**Focus:** Python, reinforcement learning, Monte Carlo control, NumPy, Matplotlib, Jupyter.
+
 ### 🪑 [Deskmate AI](https://github.com/Mehta102/DeskMateAI)
 
 A vision-driven tool that analyses a room, scores furniture placement against ergonomic heuristics and generates better layouts.
@@ -75,6 +81,8 @@ Most of my work so far is academic and personal projects in AI, perception and r
 <img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS2">
 <img src="https://img.shields.io/badge/Gazebo-FF6F00?style=for-the-badge" alt="Gazebo">
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+<img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" alt="Matplotlib">
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit--learn">
 <img src="https://img.shields.io/badge/Reinforcement%20Learning-2c5364?style=for-the-badge" alt="Reinforcement Learning">
 
