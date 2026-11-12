@@ -2,7 +2,7 @@
 
 <p align="center">
   I build AI and robotics software.<br>
-  BSc Computer Science with AI (First Class) · London
+  BSc Computer Science with AI (First Class)
 </p>
 
 <p align="center">
