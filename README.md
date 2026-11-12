@@ -49,25 +49,11 @@ Most of my work so far is academic and personal projects in AI, perception and r
 
 ---
 
-## 🧠 How the robot decides
-
-```python
-def decide(scan):
-    # priority-ordered behaviours, highest priority wins
-    if min(scan.front) < SAFE_DIST:
-        return avoid_obstacle(scan)
-    if wall_detected(scan.side):
-        return follow_wall(scan)
-    return explore()
-```
-
----
-
 ## 📈 Always Levelling Up
 
-- **Robotics:** moving from reactive behaviours to SLAM, localisation and path planning with Nav2
-- **Computer science fundamentals:** data structures and algorithms, with a structured problem-solving practice
-- **Engineering practice:** documentation, testing and clean repo structure across all my projects
+- **Robotics:** going deeper into navigation, SLAM and control, building on my ROS2 simulation work
+- **Machine learning:** studying machine learning in more depth
+- **AI tooling:** studying PyTorch for deep learning and LangChain for building LLM-powered applications
 
 ---
 
