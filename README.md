@@ -15,46 +15,62 @@
 
 ### 👋 About
 
-Recent graduate based in London. I enjoy projects where software has to sense its surroundings and make decisions, like a robot steering around obstacles or a model watching a game screen and talking back.
+I graduated with a First in Computer Science with AI, and the part I keep coming back to is making software that has to *react* to something. A robot that has to get round a chair it did not know was there. A model that watches a game screen and has to decide whether what just happened is worth talking about.
+
+I learn fastest by building the thing and watching it fail, so most of what is below started as a "can I actually make this work?" and ended up teaching me more than the lectures did.
 
 ```bash
 $ ros2 node list
 /om_mehta
 
 $ ros2 topic echo /status
-data: "open to graduate AI, ML and robotics roles | London, Luton, Cambridge"
+data: "open to graduate AI, ML and robotics roles"
 ---
 ```
 
-### 🔧 Featured projects
+### 🔧 Things I've built
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h4>🎮 <a href="https://github.com/Mehta102/backseater-ai">Backseater AI</a></h4>
-      A real-time gameplay commentator that watches the screen and gives spoken strategy advice. My final year project.<br><br>
-      <sub><b>Focus:</b> Python · computer vision · scikit-learn · decision trees · text to speech</sub>
+      My final year project. It watches a game as you play, works out what just happened on screen, and talks to you about it like a mate sitting behind you on the sofa. The hard part was not getting it to talk, it was getting it to <i>shut up</i> at the right moments.<br><br>
+      <sub><b>Built with:</b> Python · OpenCV · Tesseract · scikit-learn · text to speech</sub>
     </td>
     <td width="50%" valign="top">
       <h4>🤖 Autonomous ROS2 Robot</h4>
-      A simulated robot that navigates by itself using three behaviour layers, built and tested in Gazebo.<br>
-      <sub>Avoid obstacles → follow walls → wander</sub><br><br>
-      <sub><b>Focus:</b> ROS2 · Gazebo · Python · LIDAR · subsumption architecture</sub>
+      A simulated robot in Gazebo that drives itself around a room with no map. Three behaviours stacked by priority: dodge what is in front of it, follow a wall if there is one, otherwise just wander and see what it finds.<br><br>
+      <sub><b>Built with:</b> ROS2 · Gazebo · Python · LIDAR</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h4>🪑 <a href="https://github.com/Mehta102/DeskMateAI">Deskmate AI</a></h4>
-      A computer vision app that rates furniture placement and generates room layouts.<br><br>
-      <sub><b>Focus:</b> Python · deep learning · Flutter · React · Unity</sub>
+      Point it at a room and it tells you whether your furniture is in a sensible place, then suggests a better layout. Part computer vision, part "what would an interior designer say".<br><br>
+      <sub><b>Built with:</b> Python · deep learning · Flutter · React · Unity</sub>
     </td>
     <td width="50%" valign="top">
       <h4>🌡️ IoT Monitor</h4>
-      An ESP32 system that tracks temperature and humidity and sounds a buzzer past a set threshold.<br><br>
-      <sub><b>Focus:</b> C++ · ESP32 · sensors · Wokwi</sub>
+      A small ESP32 build that reads temperature and humidity and sets a buzzer off when things get too hot. Small, but it was my first time chasing a bug that turned out to be a wiring problem and not a code one.<br><br>
+      <sub><b>Built with:</b> C++ · ESP32 · sensors · Wokwi</sub>
     </td>
   </tr>
 </table>
+
+### 🧠 How the robot decides
+
+Roughly how the ROS2 robot picks what to do each tick (simplified from the real thing):
+
+```python
+def decide(scan):
+    if scan.front < 0.5:        # something is right in front of me
+        return turn_away()
+    if scan.side < 1.0:         # a wall is nearby, hug it
+        return follow_wall()
+    return wander()             # nothing to react to, explore
+```
+
+The order matters more than the code. Safety first, then the clever stuff.
 
 ### 🧰 Tech I use
 
@@ -79,9 +95,13 @@ data: "open to graduate AI, ML and robotics roles | London, Luton, Cambridge"
 <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white" alt="Unity">
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma">
 
-### 🌱 Currently
+### 🌱 Right now
 
-> Moving forward in depth with robotics, building on my ROS2 simulation work and going deeper into navigation, SLAM and control.
+- Going deeper into robotics: navigation, SLAM and control, building on the ROS2 simulation work
+- Working back through data structures and algorithms until they are second nature
+- Tidying up my older projects so they are actually readable by someone who is not me
+
+> Moving forward in depth with robotics, one simulated crash at a time.
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=100&section=footer" alt="" />
