@@ -52,7 +52,7 @@ Most of my work so far is academic and personal projects in AI, perception and r
 ## 📈 Always Levelling Up
 
 - **Robotics:** going deeper into navigation, SLAM and control, building on my ROS2 simulation work
-- **Machine learning:** studying machine learning in more depth
+- **Machine learning:** going deeper on ML fundamentals, from model training and evaluation to applying it in real projects
 - **AI tooling:** studying PyTorch for deep learning and LangChain for building LLM-powered applications
 
 ---
