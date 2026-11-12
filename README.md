@@ -9,7 +9,6 @@
 <p align="center">
   <a href="https://linkedin.com/in/ommehta5"><img src="https://img.shields.io/badge/LinkedIn-ommehta5-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:ommehta102@gmail.com"><img src="https://img.shields.io/badge/Email-get%20in%20touch-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/London-UK-2c5364?style=for-the-badge&logo=googlemaps&logoColor=white" alt="London, UK">
 </p>
 
 ---
