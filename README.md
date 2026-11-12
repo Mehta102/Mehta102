@@ -19,7 +19,7 @@
 
 ---
 
-## 🚀 Currently Building
+## 🚀 Featured Projects
 
 ### 🎮 [Backseater AI](https://github.com/Mehta102/backseater-ai)
 
@@ -27,7 +27,7 @@ A real-time AI commentator that watches live gameplay, detects on-screen events 
 
 **Focus:** Python, OpenCV, Tesseract OCR, scikit-learn, LLM integration, text-to-speech, real-time pipelines.
 
-### 🤖 Autonomous ROS2 Robot
+### 🤖 [Autonomous ROS2 Robot](https://github.com/Mehta102/ros2-autonomous-robot)
 
 A simulated mobile robot that navigates unknown environments with no prior map, using a priority-based behaviour architecture: obstacle avoidance, wall following and exploration. Now extending it toward SLAM and autonomous navigation.
 
