@@ -45,11 +45,11 @@ A vision-driven tool that analyses a room, scores furniture placement against er
 
 **Focus:** Python, deep learning, computer vision, Flutter, React, Unity.
 
-### 🌡️ IoT Environment Monitor
+### 🌡️ [ESP32 Humidity and Temperature Monitor](https://github.com/Mehta102/esp32-humidity-monitor)
 
-ESP32 firmware for live temperature and humidity monitoring, with threshold-based alerting.
+A second-year university project from 2025. ESP32 firmware that reads a DHT22 every 2 s, maps humidity onto a seven-colour RGB LED scale, sounds a buzzer above 80% humidity and handles debounced interrupt-driven switch overrides. Falls back to cached readings if a sensor read fails.
 
-**Focus:** C++, ESP32, sensor interfacing, embedded systems, Wokwi simulation.
+**Focus:** C++ (Arduino framework), ESP32, DHT22, interrupts and debouncing, PWM, Wokwi simulation.
 
 Most of my work so far is academic and personal projects in AI, perception and robotics. I'm now looking to apply it in a graduate engineering role.
 
